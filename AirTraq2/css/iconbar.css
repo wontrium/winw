@@ -1,0 +1,32 @@
+.iconbar {
+    text-align: center;
+    background-color: #eee;
+    overflow: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.iconbar a {
+    width: 20%;
+    padding: 12px;
+    display: block;
+    float: left;
+    font-size: 20px;
+    color: #aaa;
+    text-decoration: none;
+}
+
+.iconbar a p {
+    line-height: 0;
+}
+
+.iconbar a:hover {
+    background-color: lightcoral;
+    color: #fff;
+}
+
+.iconbar .active {
+    color: #fff;
+    background-color: lightcoral;
+}

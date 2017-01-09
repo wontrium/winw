@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Air Pollution | NECTEC</title>
+    
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/iconbar.css">
+    <link rel="stylesheet" href="css/graph.css">
+    <link rel="stylesheet" href="css/dropdown-month.css">
+    
+    <!--icon font-->
+    <link rel="stylesheet" href="path/font-awesome-4.5.0/css/font-awesome.min.css">
+    
+    <!--google chart-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+</head>
+<body>
+    <nav>
+        <img class="nav-logo" src="img/nectec-logo.jpg">
+    </nav>
+    
+    <div class="container">
+        <p class="text-headline">กราฟวิเคราะห์ข้อมูล</p>
+        
+        <!--<div class="dropdown">
+            <div class="dropdown-month-btn" onclick="dropMonth()">มีนาคม <i class="fa fa-chevron-down"></i></div>
+            <div id="myDropdown" class="dropdown-month-content">
+                <a href="#">มกราคม</a>
+                <a href="#">กุมภาพันธ์</a>
+                <a href="#">มีนาคม</a>
+                <a href="#">เมษายน</a>
+                <a href="#">พฤษภาคม</a>
+                <a href="#">มิถุนายน</a>
+                <a href="#">กรกฎาคม</a>
+                <a href="#">สิงหาคม</a>
+                <a href="#">กันยายน</a>
+                <a href="#">ตุลาคม</a>
+                <a href="#">พฤศจิกายน</a>
+                <a href="#">ธันวาคม</a>
+            </div>
+        </div>-->
+        
+        <div id="graph">
+            <p class="text-subheading">% ปริมาณแก๊ซแต่ละชนิด</p>
+            <div id="pie-chart"></div>
+            
+            <div class="dropdown">
+                <div class="dropdown-month-btn" onclick="dropMonth()">ปริมาณสารในปี 2558 <i class="fa fa-chevron-down"></i></div>
+                
+                <div id="myDropdown" class="dropdown-month-content">
+                    <a href="#">ปี 2555</a>
+                    <a href="#">ปี 2556</a>
+                    <a href="#">ปี 2557</a>
+                    <a href="#">ปี 2558</a>
+                    <a href="#">ปี 2559</a>
+                </div>
+            </div>
+            
+            <div id="bar-chart"></div>
+        </div><!--/#graph-->
+        
+        <div class="text-caption"><a href="http://codepen.io/ejsado/pen/HLgzK">by Playing with Google Charts</a></div>
+        
+    </div><!--/.container-->
+    
+    <div class="dot-update"></div>
+    <div class="iconbar">
+        <a class="" href="index.html"><i class="fa fa-globe"></i><p class="text-caption">แผนที่</p></a>
+        <a class="active" href="graph.html"><i class="fa fa-pie-chart"></i><p class="text-caption">กราฟ</p></a>
+        <a class="" href="pollution-green.html"><i class="fa fa-cloud"></i><p class="text-caption">แจ้งเตือน</p></a>
+        <a class="" href="care.html"><i class="fa fa-medkit"></i><p class="text-caption">สุขภาพ</p></a>
+        <a class="" href="user.html"><i class="fa fa-user"></i><p class="text-caption">ผู้ใช้งาน</p></a>
+    </div><!--/.icon-bar-->
+</body>
+    <!-- jquery -->
+    <script src="js/jquery-2.2.2.min.js"></script>
+    
+    <!-- js -->
+    <script src="js/script.js"></script>
+    <script src="js/graph.js"></script>
+    <script src="js/dropdown-month.js"></script>
+</html>
