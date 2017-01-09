@@ -1,0 +1,81 @@
+.slideshow {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: lightcoral;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+.slide-number {
+    color: lightcoral;
+    padding: 8px 12px;
+    width: 100%;
+}
+
+.slide-content {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.dot-group {
+    position: fixed;
+    bottom: 10%;
+    width: 100%;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: lightcoral;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
